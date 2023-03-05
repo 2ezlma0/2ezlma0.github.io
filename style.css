@@ -1,0 +1,39 @@
+body{
+background-image: url(img/back.gif);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+font-family: andale mono, monospace;
+}
+
+
+.title{
+    text-align: center;
+    position:relative;
+    top: 175px;
+    letter-spacing: 0.05px;
+    font-size: 30px;
+    color: white;
+    animation-name: fadein; 
+    animation-duration: 2.2s;
+    animation-iteration-count: 1;
+}
+
+.maintext{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    letter-spacing: 0.05px;
+    font-size: 26px;
+    color: white;
+    animation-name: fadein;
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
