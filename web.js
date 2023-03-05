@@ -3,6 +3,7 @@ function opacity(){
   var mainT = document.getElementById("maint");
   var steam = document.getElementById("steam");
   var twitter = document.getElementById("twitter");
+  var git = document.getElementById("git");
   var yt = document.getElementById("yt");
   var ttv = document.getElementById("ttv");
   var inv = false;
@@ -25,6 +26,7 @@ function opacity(){
   twitter.classList.add("fadein");
   yt.classList.add("fadein");
   ttv.classList.add("fadein");
+  git.classList.add("fadein");
   setTimeout(1);
   steam.addEventListener("animationend", ()=> {
   if(!inv){
@@ -34,5 +36,6 @@ function opacity(){
   twitter.style.opacity = 1;
   yt.style.opacity = 1;
   ttv.style.opacity = 1;
+  git.style.opacity = 1;
   });
 }
