@@ -1,4 +1,19 @@
 function opacity(){
+  var loopcancel = false;
+  window.addEventListener("click", function(){
+    setTimeout(3)
+    if(loopcancel == false)
+    {
+      var video = document.getElementsByClassName("video")[0];
+      let iframe = document.createElement("iframe");
+      iframe.setAttribute("height", "0.01");
+      iframe.setAttribute("width", "0.01");
+      iframe.setAttribute("src", "https://www.youtube.com/embed/k4PfFz0n8jc?list=PLPFEWovHEPG_oc7n7eYE1tSlmsZAub4G-&autoplay=1");
+      iframe.setAttribute("allow", "accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+      video.append(iframe);
+      loopcancel = true;
+    }
+  })
   var title = document.getElementById("titleid");
   var mainT = document.getElementById("maint");
   var steam = document.getElementById("steam");
